@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "Foliage Hunter",
+    "slug": "foliage-hunter",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "foliagehunter",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.foliagehunter.app",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Foliage Hunter listens so you can ask what leaf you found.",
+        "NSSpeechRecognitionUsageDescription": "Foliage Hunter may use speech to understand your questions.",
+        "NSCameraUsageDescription": "Foliage Hunter uses the camera so you can snap a leaf and get a name.",
+        "NSPhotoLibraryUsageDescription": "Foliage Hunter uses your photo library so you can identify a leaf without the camera.",
+        "NSPhotoLibraryAddUsageDescription": "Foliage Hunter can save a leaf find to your Photos."
+      }
+    },
+    "android": {
+      "package": "com.foliagehunter.app",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "READ_MEDIA_IMAGES",
+        "RECORD_AUDIO",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-asset",
+      "expo-audio",
+      "expo-sharing",
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow Foliage Hunter to save leaf finds to your photo library.",
+          "savePhotosPermission": "Allow Foliage Hunter to save leaf finds to your photo library.",
+          "isAccessMediaLocationEnabled": false
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow Foliage Hunter to note where you found each leaf."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Allow Foliage Hunter to snap leaves for identification.",
+          "photosPermission": "Allow Foliage Hunter to choose a leaf photo for identification."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

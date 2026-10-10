@@ -1,0 +1,28 @@
+{
+  "region": "Colorado Front Range / Rockies priority",
+  "notes": "Fall leaf-peeping focus. Colorado place_id=34 for local tiers. CC-BY-NC allowed for private training only (images gitignored, not redistributed).",
+  "place_id_colorado": 34,
+  "priority": [
+    {"common": "quaking aspen", "scientific": "Populus tremuloides", "inat_taxon_id": 54840, "tier": "colorado_core"},
+    {"common": "narrowleaf cottonwood", "scientific": "Populus angustifolia", "inat_taxon_id": 52130, "tier": "colorado_core"},
+    {"common": "Gambel oak", "scientific": "Quercus gambelii", "inat_taxon_id": 116377, "tier": "colorado_core"},
+    {"common": "boxelder", "scientific": "Acer negundo", "inat_taxon_id": 47726, "tier": "colorado_core"},
+    {"common": "Rocky Mountain maple", "scientific": "Acer glabrum", "inat_taxon_id": 63078, "tier": "colorado_core"},
+    {"common": "chokecherry", "scientific": "Prunus virginiana", "inat_taxon_id": 54835, "tier": "colorado_core"},
+    {"common": "serviceberry", "scientific": "Amelanchier alnifolia", "inat_taxon_id": 75415, "tier": "colorado_core"},
+    {"common": "peachleaf willow", "scientific": "Salix amygdaloides", "inat_taxon_id": 54842, "tier": "colorado_core"},
+    {"common": "green ash", "scientific": "Fraxinus pennsylvanica", "inat_taxon_id": 54808, "tier": "front_range_urban"},
+    {"common": "Siberian elm", "scientific": "Ulmus pumila", "inat_taxon_id": 79463, "tier": "front_range_urban"},
+    {"common": "silver maple", "scientific": "Acer saccharinum", "inat_taxon_id": 54762, "tier": "front_range_urban"},
+    {"common": "sugar maple", "scientific": "Acer saccharum", "inat_taxon_id": 52543, "tier": "north_america"},
+    {"common": "northern red oak", "scientific": "Quercus rubra", "inat_taxon_id": 49005, "tier": "north_america"},
+    {"common": "American sweetgum", "scientific": "Liquidambar styraciflua", "inat_taxon_id": 49658, "tier": "north_america"},
+    {"common": "ginkgo", "scientific": "Ginkgo biloba", "inat_taxon_id": 64350, "tier": "north_america"},
+    {"common": "ponderosa pine", "scientific": "Pinus ponderosa", "inat_taxon_id": 48461, "tier": "colorado_conifer"},
+    {"common": "Douglas-fir", "scientific": "Pseudotsuga menziesii", "inat_taxon_id": 48256, "tier": "colorado_conifer"},
+    {"common": "blue spruce", "scientific": "Picea pungens", "inat_taxon_id": 119092, "tier": "colorado_conifer"}
+  ],
+  "prefer_colorado_place_for_tiers": ["colorado_core", "colorado_conifer", "front_range_urban"],
+  "target_images_per_species": 80,
+  "licenses": ["cc0", "cc-by", "cc-by-sa", "cc-by-nc"]
+}

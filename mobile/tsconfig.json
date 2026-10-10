@@ -1,0 +1,23 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  },
+  "include": [
+    ".expo/types/**/*.ts",
+    "App.tsx",
+    "app.config.js",
+    "app/**/*.ts",
+    "app/**/*.tsx",
+    "expo-env.d.ts",
+    "index.js",
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ]
+}
