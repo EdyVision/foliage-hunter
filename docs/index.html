@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Foliage Hunter — Hear the guide</title>
+  <style>
+    :root {
+      --cream: #f4f1ea;
+      --ink: #1a1a14;
+      --leaf: #2d6a4f;
+      --leaf-deep: #1b4332;
+      --muted: #5c5a52;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #d8e6d4 0%, transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, #e8dcc8 0%, transparent 50%),
+        var(--cream);
+    }
+
+    main {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+
+    h1 {
+      margin: 0 0 0.35rem;
+      font-size: 1.85rem;
+      letter-spacing: -0.02em;
+      color: var(--leaf-deep);
+    }
+
+    .lede {
+      margin: 0 0 2rem;
+      color: var(--muted);
+      line-height: 1.45;
+      font-size: 1.05rem;
+    }
+
+    .clip {
+      display: grid;
+      grid-template-columns: 5.5rem 1fr;
+      gap: 1rem;
+      align-items: start;
+      padding: 1.1rem 0;
+      border-top: 1px solid rgba(45, 106, 79, 0.18);
+    }
+
+    .clip:last-of-type { border-bottom: 1px solid rgba(45, 106, 79, 0.18); }
+
+    .clip img {
+      width: 5.5rem;
+      height: auto;
+      border-radius: 0.35rem;
+      display: block;
+    }
+
+    .clip h2 {
+      margin: 0 0 0.4rem;
+      font-size: 1.15rem;
+      color: var(--leaf-deep);
+    }
+
+    .clip p {
+      margin: 0 0 0.75rem;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      color: var(--muted);
+    }
+
+    audio {
+      width: 100%;
+      height: 2.25rem;
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 1.75rem;
+      color: var(--leaf);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .back:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Hear the guide</h1>
+    <p class="lede">
+      Magpie TTS lines from real Foliage Hunter finds. GitHub READMEs cannot host a real audio player, so these clips live here.
+    </p>
+
+    <article class="clip" id="quaking-aspen">
+      <img src="media/QuakingAspenIdentification.png" alt="Quaking aspen card" />
+      <div>
+        <h2>Quaking aspen</h2>
+        <p>That looks like quaking aspen. Nice find. Leaf colors include ember, bronze, gold, and rust. Famous for fluttering leaves and Colorado gold in fall. Bark and buds feed wildlife, not a human snack.</p>
+        <audio controls preload="metadata" src="media/audio/quaking-aspen.mp3">Quaking aspen clip</audio>
+      </div>
+    </article>
+
+    <article class="clip" id="sugar-maple">
+      <img src="media/SugarMapleIdentification.png" alt="Sugar maple card" />
+      <div>
+        <h2>Sugar maple</h2>
+        <p>That looks like sugar maple. Nice find. Leaf colors include amber, ember, rust, and gold. Famous for tapped sap made into maple syrup. Leaves and raw parts are not snacks.</p>
+        <audio controls preload="metadata" src="media/audio/sugar-maple.mp3">Sugar maple clip</audio>
+      </div>
+    </article>
+
+    <article class="clip" id="american-sweetgum">
+      <img src="media/AmericanSweetgumIdentification.png" alt="American sweetgum card" />
+      <div>
+        <h2>American sweetgum</h2>
+        <p>That looks like American sweetgum. Nice find. Leaf colors include bronze, amber, rust, and ember. Famous for star-shaped leaves and spiky gum balls. Not a food plant.</p>
+        <audio controls preload="metadata" src="media/audio/american-sweetgum.mp3">American sweetgum clip</audio>
+      </div>
+    </article>
+
+    <article class="clip" id="northern-red-oak">
+      <img src="media/NorthernRedOakIdentification.png" alt="Northern red oak card" />
+      <div>
+        <h2>Northern red oak</h2>
+        <p>That looks like northern red oak. Nice find. Leaf colors include scarlet, burgundy, rust, and amber. Famous for pointed-lobed leaves and strong fall red. Acorns are high-tannin and need processing.</p>
+        <audio controls preload="metadata" src="media/audio/northern-red-oak.mp3">Northern red oak clip</audio>
+      </div>
+    </article>
+
+    <article class="clip" id="ginkgo">
+      <img src="media/GinkgoIdentification.png" alt="Ginkgo card" />
+      <div>
+        <h2>Ginkgo</h2>
+        <p>That looks like ginkgo. Nice find. Leaf colors include amber, bronze, ember, and burgundy. Famous as a living fossil with fan-shaped leaves. Seeds need careful prep; the fleshy coat is foul and irritating.</p>
+        <audio controls preload="metadata" src="media/audio/ginkgo.mp3">Ginkgo clip</audio>
+      </div>
+    </article>
+
+    <article class="clip" id="boxelder">
+      <img src="media/BoxelderIdentification.png" alt="Boxelder card" />
+      <div>
+        <h2>Boxelder</h2>
+        <p>That looks like boxelder. Nice find. Leaf colors include amber, olive, bronze, and burgundy. A maple relative common in yards and washes. Grown for shade, not fruit.</p>
+        <audio controls preload="metadata" src="media/audio/boxelder.mp3">Boxelder clip</audio>
+      </div>
+    </article>
+
+    <a class="back" href="https://github.com/EdyVision/foliage-hunter">← Foliage Hunter on GitHub</a>
+  </main>
+</body>
+</html>
